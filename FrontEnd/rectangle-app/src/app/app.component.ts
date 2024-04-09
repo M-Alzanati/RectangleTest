@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { RectangleComponent } from './rectangle/rectangle/rectangle.component';
 import { CommonModule } from '@angular/common';
 

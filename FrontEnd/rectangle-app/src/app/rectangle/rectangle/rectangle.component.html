@@ -1,12 +1,17 @@
 <div class="container">
   <svg>
-    <rect
+    <defs>
+      <clipPath id="rectClip">
+        <rect [attr.width]="width" [attr.height]="height" />
+      </clipPath>
+    </defs>
+    <image
+      [attr.href]="'assets/car.jpg'"
       [attr.width]="width"
       [attr.height]="height"
-      fill="lightblue"
-      style="fill: rgb(0, 0, 255); stroke-width: 3; stroke: rgb(0, 0, 0)"
+      clip-path="url(#rectClip)"
     />
   </svg>
-  <p>Width: {{width}}, Hight: {{height}}</p>
+  <p>Width: {{width}}, Height: {{height}}</p>
   <p>Perimeter: {{ perimeter }}</p>
 </div>
